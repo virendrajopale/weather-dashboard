@@ -25,7 +25,7 @@ const getWeatherIcon = (condition) => {
 };
 
 function Forecast({ forecast }) {
-
+console.log(forecast);
   return (
     <Grid container spacing={2}>
       {forecast.map((day, index) => (

@@ -65,7 +65,8 @@ function App() {
             feels: ((day.main.feels_like) - 273).toFixed(2),
             icon: `http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`,
             humidity: day.main.humidity,
-            windSpeed: day.wind.speed
+            windSpeed: day.wind.speed,
+            date:(day.dt_txt.slice(0,10))
           };
         });
       setForecast(daily);
